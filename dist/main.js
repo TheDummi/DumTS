@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const framework_1 = require("@sapphire/framework");
+const config_json_1 = require("./data/config.json");
+const client = new framework_1.SapphireClient({ intents: ['GUILDS', 'GUILD_MESSAGES'] });
+client.login(config_json_1.token);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9tYWluLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsbURBQXFEO0FBQ3JELG9EQUEyQztBQUUzQyxNQUFNLE1BQU0sR0FBRyxJQUFJLDBCQUFjLENBQUMsRUFBRSxPQUFPLEVBQUUsQ0FBQyxRQUFRLEVBQUUsZ0JBQWdCLENBQUMsRUFBRSxDQUFDLENBQUM7QUFFN0UsTUFBTSxDQUFDLEtBQUssQ0FBQyxtQkFBSyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBTYXBwaGlyZUNsaWVudCB9IGZyb20gJ0BzYXBwaGlyZS9mcmFtZXdvcmsnO1xyXG5pbXBvcnQgeyB0b2tlbiB9IGZyb20gJy4vZGF0YS9jb25maWcuanNvbic7XHJcblxyXG5jb25zdCBjbGllbnQgPSBuZXcgU2FwcGhpcmVDbGllbnQoeyBpbnRlbnRzOiBbJ0dVSUxEUycsICdHVUlMRF9NRVNTQUdFUyddIH0pO1xyXG5cclxuY2xpZW50LmxvZ2luKHRva2VuKTsiXX0=
