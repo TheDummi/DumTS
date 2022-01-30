@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ReadyListener = void 0;
+const framework_1 = require("@sapphire/framework");
+class ReadyListener extends framework_1.Listener {
+    run(client) {
+        const { username } = client.user;
+        this.container.logger.info(`Successfully logged in as ${username}`);
+    }
+}
+exports.ReadyListener = ReadyListener;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVhZHkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvbGlzdGVuZXJzL3JlYWR5LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLG1EQUErQztBQUcvQyxNQUFhLGFBQWMsU0FBUSxvQkFBUTtJQUNsQyxHQUFHLENBQUMsTUFBYztRQUN2QixNQUFNLEVBQUUsUUFBUSxFQUFFLEdBQUcsTUFBTSxDQUFDLElBQUssQ0FBQztRQUNsQyxJQUFJLENBQUMsU0FBUyxDQUFDLE1BQU0sQ0FBQyxJQUFJLENBQUMsNkJBQTZCLFFBQVEsRUFBRSxDQUFDLENBQUM7SUFDdEUsQ0FBQztDQUNGO0FBTEQsc0NBS0MiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBMaXN0ZW5lciB9IGZyb20gJ0BzYXBwaGlyZS9mcmFtZXdvcmsnO1xyXG5pbXBvcnQgdHlwZSB7IENsaWVudCB9IGZyb20gJ2Rpc2NvcmQuanMnO1xyXG5cclxuZXhwb3J0IGNsYXNzIFJlYWR5TGlzdGVuZXIgZXh0ZW5kcyBMaXN0ZW5lciB7XHJcbiAgcHVibGljIHJ1bihjbGllbnQ6IENsaWVudCkge1xyXG4gICAgY29uc3QgeyB1c2VybmFtZSB9ID0gY2xpZW50LnVzZXIhO1xyXG4gICAgdGhpcy5jb250YWluZXIubG9nZ2VyLmluZm8oYFN1Y2Nlc3NmdWxseSBsb2dnZWQgaW4gYXMgJHt1c2VybmFtZX1gKTtcclxuICB9XHJcbn0iXX0=

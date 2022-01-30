@@ -1,6 +1,6 @@
 import { Command } from '@sapphire/framework';
-import { Message } from 'discord.js'
-
+import { Message } from 'discord.js';
+import { send } from '@sapphire/plugin-editable-commands';
 export class PingCommand extends Command {
   public constructor(context: Command.Context, options: Command.Options) {
     super(context, {
@@ -12,11 +12,9 @@ export class PingCommand extends Command {
     }
     
     public async messageRun(message: Message) {
-        const msg = await message.channel.send('Ping?');
+      const msg = await send(message, { content: 'Ping?' });
     
-        const content = `Pong from JavaScript! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${
-          msg.createdTimestamp - message.createdTimestamp
-        }ms.`;
+        const content = `Pong from JavaScript! Bot Latency ${Math.round(this.container.client.ws.ping)}ms. API Latency ${msg.createdTimestamp - message.createdTimestamp}ms.`;
     
         return msg.edit(content);
       }

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MessageCreateListener = void 0;
+const framework_1 = require("@sapphire/framework");
+class MessageCreateListener extends framework_1.Listener {
+    run(client, message) {
+        if (message?.author?.id == client?.user?.id)
+            return;
+    }
+}
+exports.MessageCreateListener = MessageCreateListener;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWVzc2FnZUNyZWF0ZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9saXN0ZW5lcnMvbWVzc2FnZUNyZWF0ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSxtREFBK0M7QUFHL0MsTUFBYSxxQkFBc0IsU0FBUSxvQkFBUTtJQUMxQyxHQUFHLENBQUMsTUFBYyxFQUFFLE9BQWdCO1FBQ3pDLElBQUksT0FBTyxFQUFFLE1BQU0sRUFBRSxFQUFFLElBQUksTUFBTSxFQUFFLElBQUksRUFBRSxFQUFFO1lBQUUsT0FBTztJQUN0RCxDQUFDO0NBQ0Y7QUFKRCxzREFJQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IExpc3RlbmVyIH0gZnJvbSAnQHNhcHBoaXJlL2ZyYW1ld29yayc7XHJcbmltcG9ydCB0eXBlIHsgQ2xpZW50LCBNZXNzYWdlIH0gZnJvbSAnZGlzY29yZC5qcyc7XHJcblxyXG5leHBvcnQgY2xhc3MgTWVzc2FnZUNyZWF0ZUxpc3RlbmVyIGV4dGVuZHMgTGlzdGVuZXIge1xyXG4gIHB1YmxpYyBydW4oY2xpZW50OiBDbGllbnQsIG1lc3NhZ2U6IE1lc3NhZ2UpIHtcclxuICAgIGlmIChtZXNzYWdlPy5hdXRob3I/LmlkID09IGNsaWVudD8udXNlcj8uaWQpIHJldHVybjtcclxuICB9XHJcbn0iXX0=
